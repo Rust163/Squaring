@@ -1,14 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-    Main.squaring();
-
+        int result = squaring(4);
+        System.out.println("Результат возведения числа в квадрат: " + result);
     }
-    public static void squaring () {
-        int number = 10;
-        int squaringNumber;
-        squaringNumber = number * number;
-        System.out.println("Число " + number + " возведенное в квадрат будет: " + squaringNumber);
+    public static int squaring (int number) {
+        return number * number;
     }
-
 }
 
